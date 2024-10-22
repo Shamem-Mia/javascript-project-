@@ -1,0 +1,69 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+ 
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 20rem;
+    width: 50%;
+    border-radius: 5%;
+    
+    background-color: antiquewhite;
+}
+
+.card-title{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+#guessingNumber {
+    border: 50%;
+    width: 15rem;
+    height: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    padding-left: 0;
+    padding-right: 7.8rem;
+    
+}
+
+#check {
+    background-color: rgb(171, 198, 201);
+    height: 1.8rem;
+    width: 4rem;
+}
+
+p {
+    text-align: center;
+}
+
+.large-text {
+    font-size: 1.5rem;
+    color: rgb(37, 37, 70);
+}
