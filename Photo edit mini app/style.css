@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --padding: 5px;
+  --blur: 0px;
+  --base: rgb(40, 211, 34);
+  --width: 50%;
+  --border-radius: 15px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  border-radius: 20px;
+  background: linear-gradient(to right, #1d2b64, #61045f);
+  box-shadow: 10px 10px rgb(159, 158, 153, 0.3),
+    -10px -10px rgb(159, 158, 153, 0.3);
+  background-color: rgb(62, 189, 147);
+  padding: 3rem;
+  width: 60%;
+  height: 90vh;
+}
+
+h1 {
+  font-size: 2rem;
+  color: aliceblue;
+  margin-bottom: 1rem;
+}
+
+span {
+  font-size: 2rem;
+  color: var(--base);
+  font-weight: 800;
+}
+
+.css-controler {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0;
+}
+
+label {
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: aliceblue;
+  margin-top: 0.5rem;
+}
+
+img {
+  width: var(--width);
+  height: 25%;
+  margin-top: 1rem;
+  padding: var(--padding);
+  filter: blur(var(--blur));
+  background-color: var(--base);
+  border-radius: var(--border-radius);
+  transition: filter 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="range"] {
+  width: 100%;
+}

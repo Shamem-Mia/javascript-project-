@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo edit mini project</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <h1>Photo Editor</h1>
+      <span>JavaScript</span>
+
+      <div class="css-controler">
+        <label>collor</label>
+        <input type="color" id="collor-change" value="#ff0000" />
+        <label for="width">width</label>
+        <input
+          type="range"
+          name="width"
+          id="width"
+          min="0"
+          max="100"
+          value="50"
+          data-sizing="%"
+        />
+        <label for="border-radius">border radius</label>
+        <input
+          type="range"
+          name="border-radius"
+          id="border-radius"
+          min="0"
+          max="100"
+          value="50"
+          data-sizing="px"
+        />
+        <label for="padding">padding</label>
+        <input
+          type="range"
+          name="padding"
+          id="padding"
+          min="10"
+          max="200"
+          value="50"
+          data-sizing="px"
+        />
+        <label for="blur">blur</label>
+        <input
+          type="range"
+          name="blur"
+          id="blur"
+          min="0"
+          max="25"
+          value="5"
+          data-sizing="px"
+        />
+      </div>
+
+      <img src="image.png" alt="img from pixabay" />
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
